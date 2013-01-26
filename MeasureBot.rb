@@ -4,7 +4,7 @@ require 'rubygems'
 require 'chatterbot/dsl'
 
 # remove this to send out tweets
-#debug_mode
+debug_mode
 
 # remove this to update the db
 #no_update
@@ -18,7 +18,7 @@ verbose
 #exclude "hi", "spammer", "junk"
 
 search "unique visits" do |tweet|
- reply "Hey #USER# , do you mean unique visitors?", tweet
+ reply "Hey #USER# , do you mean unique visitors? #measure", tweet
 end
 
 #replies do |tweet|
