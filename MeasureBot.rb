@@ -17,8 +17,12 @@ verbose
 # here's a list of things to exclude from searches
 #exclude "hi", "spammer", "junk"
 
-search "unique visits" do |tweet|
+search "'unique visits' #measure" do |tweet|
  reply "Hey #USER# , do you mean unique visitors? #measure", tweet
+end
+
+search "hits #measure" do |tweet|
+  reply "#USER# HITS? That is How Idiots Track Success! #measure", tweet
 end
 
 #replies do |tweet|
