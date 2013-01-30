@@ -12,17 +12,17 @@ require 'chatterbot/dsl'
 verbose
 
 # here's a list of users to ignore
-#blacklist "abc", "def"
+blacklist "MeasureBot"
 
 # here's a list of things to exclude from searches
 #exclude "hi", "spammer", "junk"
 
 search "'unique visits' #measure" do |tweet|
- reply "Hey #USER# , do you mean unique visitors? #measure", tweet
+ reply "Hey #USER# , do you mean unique visitors?", tweet
 end
 
 search "hits #measure" do |tweet|
-  reply "#USER# HITS? That is How Idiots Track Success! #measure", tweet
+  reply "#USER# HITS? That's How Idiots Track Success!", tweet
 end
 
 #replies do |tweet|
